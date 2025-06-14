@@ -50,14 +50,14 @@ const arrHiring = [
     hiring5 = new Hiring(client6,4,"Pending"),
     hiring6 = new Hiring(client15,5,"Pending"),
     hiring7 = new Hiring(client9,6,"Acepted"),
-    hiring8 = new Hiring(client7,7,"Canceled"),
+    hiring8 = new Hiring(client7,7,"Acepted"),
     hiring9 = new Hiring(client11,8,"Pending"),
     hiring10 = new Hiring(client19,9,"Pending"),    
 ]
 const arrWalker = [
     dogWalker1 = new DogWalker("Matthew","Murdock","DareD","NotFear",0,[hiring1,hiring10],"13"),
     dogWalker2 = new DogWalker("Carl","Lucas","Luke","PowerMan",1,[hiring2,hiring9,hiring7],"19"),
-    dogWalker3 = new DogWalker("Daniel","Rand","IronFi","KunLun",2[hiring3,hiring4,hiring5],"7"),
+    dogWalker3 = new DogWalker("Daniel","Rand","IronFi","KunLun",2,[hiring3,hiring4,hiring5],"7"),
     dogWalker4 = new DogWalker("Jessica","Jones","Jewels","Purple",3,[hiring6,hiring8],"12"),
     dogWalker5 = new DogWalker("Mercedes","Knight","Misty","Detect",4,[],"16"),
 ]

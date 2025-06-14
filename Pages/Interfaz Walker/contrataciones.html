@@ -16,6 +16,7 @@
                         <th scope="col">Cliente</th>
                         <th scope="col">Perro</th>
                         <th scope="col">Tamaño</th>
+                        <th scope="col">Estado</th>
                         <th scope="col">Gestionar</th>
                       </tr>
                     </thead>
@@ -42,16 +43,17 @@
     <div class="card border-dark mb-3">
         <div class="card-body">
             <h3 class="card-title">Aprobadas</h3>
-                <table class="table">
+                <table class="table" id="tableAprob">
                     <thead>
                       <tr>
                         <th scope="col">Cliente</th>
                         <th scope="col">Perro</th>
                         <th scope="col">Tamaño</th>
-                        <th scope="col">Solicitar</th>
+                        <th scope="col">Estado</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tableAprobBody">
+                      <!--
                       <tr>
                         <td>XXXXXX</td>
                         <td>XXXXXX</td>
@@ -64,33 +66,20 @@
                         <td>XXXXXX</td>
                         <td>XXXXXX</td>
                       </tr>
-                      <tr>
-                        <td>XXXXXX</td>
-                        <td>XXXXXX</td>
-                        <td>XXXXXX</td>
-                        <td>XXXXXX</td>
-                      </tr>
-                      <tr>
-                        <td>XXXXXX</td>
-                        <td>XXXXXX</td>
-                        <td>XXXXXX</td>
-                        <td>XXXXXX</td>
-                      </tr>
-                      <tr>
-                        <td>XXXXXX</td>
-                        <td>XXXXXX</td>
-                        <td>XXXXXX</td>
-                        <td>XXXXXX</td>
-                      </tr>
-                      <tr>
-                        <td>XXXXXX</td>
-                        <td>XXXXXX</td>
-                        <td>XXXXXX</td>
-                        <td>XXXXXX</td>
-                      </tr>
+                      -->
                     </tbody>
                 </table>
         </div>
     </div>
+
+<script src="../../Js/Class.js"></script>
+<script src="../../Js/Arrays.js"></script>
+<script src="../../Js/Variables.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../../Js/Validation.js"></script>
+<script src="../../Js/Events.js"></script>
+<script src="../../Js/Navigate.js"></script>
+<script src="../../Js/pages/login.js"></script>
+<script src="../../Js/index.js"></script>
 </body>
 </html>

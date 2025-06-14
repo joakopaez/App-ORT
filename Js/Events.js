@@ -68,15 +68,16 @@ function walkerAviable(user){
 }
 
 function showHirings(user){
-    let currentWalker;
+    let currentWalker = "";
     
     arrWalker.forEach(walker => {
         if(walker.userName == user){
             currentWalker = walker;
+            console.log(currentWalker);
         }
     })
 
-    currentWalker.hirings.forEach(hiring =>{
+    currentWalker.hiring.forEach(hiring =>{
         if(hiring.status == "Pending"){
             const body = document.querySelector("#tablePendBody");
             
@@ -84,13 +85,23 @@ function showHirings(user){
                 <tr>
                     <td>${hiring.client.name} ${hiring.client.lastName}</td>
                     <td>${hiring.client.dog.name}</td>
-                    <td>${hiring.client.dog.size}</td>+
+                    <td>${hiring.client.dog.size}</td>
                     <td>${hiring.status}</td>
                     <td><button type="button" class="btn btn-success">Aceptar</button></td>
                 </tr>  
             `;
             
         }else if(hiring.status == "Acepted"){
+            const body = document.querySelector("#tableAprobBody");
+            
+            body.innerHTML += `
+                <tr>
+                    <td>${hiring.client.name} ${hiring.client.lastName}</td>
+                    <td>${hiring.client.dog.name}</td>
+                    <td>${hiring.client.dog.size}</td>
+                    <td>${hiring.status}</td>
+                </tr>  
+            `;
 
             
         }
