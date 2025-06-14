@@ -1,0 +1,14 @@
+.card{
+    max-width: 350px;
+    align-items: center;
+    margin-left: 38%;
+    margin-top: 11%;;
+}
+
+.card-body{
+    margin-top: 2rem;
+}
+
+.card button{
+    margin-left: 2rem;
+}
