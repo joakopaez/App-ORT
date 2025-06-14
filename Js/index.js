@@ -1,0 +1,1 @@
+NavigateTo(userView, initLogin)

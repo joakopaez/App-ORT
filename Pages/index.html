@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Login y Registro/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+  <main id="app"></main>
+
+  <template id="Login">
+    <div class="card border-dark mb-3">
+        <div class="card-body">
+            <h3 class="card-title">LogIn</h3>
+            <form>
+                <div class="form-group">
+                  <label for="inputRegistedUser">Usuario</label>
+                  <input type="text" class="form-control" id="inputRegistedUser" placeholder="Usuario">
+                </div>
+                <div class="form-group">
+                  <label for="inputRegistedPassword">Contraseña</label>
+                  <input type="password" class="form-control" id="inputRegistedPassword" placeholder="Contraseña">
+                </div>
+                <select class="form-select" id="inputUserType" aria-label="Default select example">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Cliente">Cliente</option>
+                    <option value="Paseador">Paseador</option>
+                </select>
+                <button type="button" id="logInButton" class="btn btn-primary">Ingresar</button>
+              </form>
+        </div>
+      </div>
+  </template>    
+    <template id="SingUpClient">
+    <div class="card border-dark mb-3">
+        <div class="card-body">
+            <h3 class="card-title">Registro Clientes</h3>
+            <form>
+                <div class="form-group">
+                    <label for="inputName">Nombre</label>
+                    <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                  <label for="inputLastName">Apellido</label>
+                  <input type="text" class="form-control" id="inputLastName" placeholder="Apellido">
+                </div>
+                <div class="form-group">
+                  <label for="inputUserName">Nombre de usuario</label>
+                  <input type="text" class="form-control" id="inputUserName" placeholder="Usuario">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+                </div>
+                <div class="form-group">
+                    <label for="inputDogName">Nombre del perro</label>
+                    <input type="text" class="form-control" id="inputDogName" placeholder="Nombre">
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="">Seleccionar</option>
+                    <option value="1">Chico</option>
+                    <option value="2">Mediano</option>
+                    <option value="4">Grande</option>
+                </select><br>
+                <button type="submit" class="btn btn-primary">Resgistrarse</button>
+            </form>
+        </div>
+    </div>
+    </template>
+    <template id="SignUpWalker">
+            <div class="card border-dark mb-3">
+        <div class="card-body">
+            <h3 class="card-title">Registro Paseadores</h3>
+            <form>
+                <div class="form-group">
+                  <label for="inputName">Nombre</label>
+                  <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                  <label for="inputLastName">Apellido</label>
+                  <input type="text" class="form-control" id="inputLastName" placeholder="Apellido">
+                </div>
+                <div class="form-group">
+                  <label for="inputUserName">Nombre de usuario</label>
+                  <input type="text" class="form-control" id="inputUserName" placeholder="Usuario">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+                </div>
+                <div class="form-group">
+                    <label for="inputSlot">Capacidad de camioneta</label>
+                    <input type="number" class="form-control" id="inputSlot" placeholder="Capacidad">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Resgistrarse</button>
+            </form>
+        </div>
+    </div>
+    </template>
+    <template id="availableWalkers">
+            <div class="card border-dark mb-3">
+        <div class="card-body">
+            <h3 class="card-title">Paseadores Disponibles</h3>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Espacio Disponible</th>
+                        <th scope="col">Solicitar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>XXXXXX</td>
+                        <td>XXXXXX</td>
+                        <td>XXXXXX</td>
+                        <td><button type="button" class="btn btn-success">Solicitar</button></td>
+                      </tr>
+                      <tr>
+                        <td>XXXXXX</td>
+                        <td>XXXXXX</td>
+                        <td>XXXXXX</td>
+                        <td><button type="button" class="btn btn-success">Solicitar</button></td>
+                      </tr>
+                      <tr>
+                        <td>XXXXXX</td>
+                        <td>XXXXXX</td>
+                        <td>XXXXXX</td>
+                        <td><button type="button" class="btn btn-success">Solicitar</button></td>
+                      </tr>
+                      <tr>
+                        <td>XXXXXX</td>
+                        <td>XXXXXX</td>
+                        <td>XXXXXX</td>
+                        <td><button type="button" class="btn btn-success">Solicitar</button></td>
+                      </tr>
+                      <tr>
+                        <td>XXXXXX</td>
+                        <td>XXXXXX</td>
+                        <td>XXXXXX</td>
+                        <td><button type="button" class="btn btn-success">Solicitar</button></td>
+                      </tr>
+                      <tr>
+                        <td>XXXXXX</td>
+                        <td>XXXXXX</td>
+                        <td>XXXXXX</td>
+                        <td><button type="button" class="btn btn-success">Solicitar</button></td>
+                      </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+    </template>
+
+<script src="../Js/Class.js"></script>
+<script src="../Js/Arrays.js"></script>
+<script src="../Js/Variables.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../Js/Validation.js"></script>
+<script src="../Js/Events.js"></script>
+<script src="../Js/Navigate.js"></script>
+<script src="../Js/pages/login.js"></script>
+<script src="../Js/index.js"></script>
+</body>
+</html>

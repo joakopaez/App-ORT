@@ -1,0 +1,63 @@
+const Firulais = new Dog("Firulais", 2);
+const Manchita = new Dog("Manchita", 1);
+const Milú = new Dog("Milú",2);
+const Lassie = new Dog("Lassie", 4);
+const AydudantedeSanta = new Dog("Ayudante de Santa", 4);
+const Maylo = new Dog("Maylo", 1);
+const RinTinTin = new Dog("Rin Tin Tin", 4);
+const Hachiko = new Dog("Hachiko", 2);
+const Bolt = new Dog("Bolt", 1);
+const Beethoven = new Dog("Beethoven",4);
+const Pancho = new Dog("Pancho", 1);
+const Brian = new Dog("Brian", 2);
+const Rex = new Dog("Rex", 4);
+const Pluto = new Dog("Pluto", 2);
+const ScoobyDoo = new Dog("Scooby Doo", 4);
+const Toto = new Dog("Toto", 1);
+const Balto = new Dog("Balto", 2);
+const Laika = new Dog("Laika", 2);
+const Smoky = new Dog("Smoky", 2);
+const Betun = new Dog("Betún", 4);
+
+const arrClient = [
+    client1 = new Client("Marcos","Padilla","MarcosPad","Marcos123",0,Firulais),
+    client2 = new Client("Pablo","Lampone","BasiliodosSantos","Lampo01",1,Betun),
+    client3 = new Client("Emilio","Ravenna","MaxCozzetti","Cozzeti75",2,Milú),
+    client4 = new Client("Gabriel","Medina","Dupont","Jaques89",3,Manchita),
+    client5 = new Client("Mario","Santos","AguirreFran","Fuegotiene?47",4,Lassie),
+    client6 = new Client("Marcos","Molero","AleAwada","Detecti3",5,AydudantedeSanta),
+    client7 = new Client("Franco","Milazzo","VianoCes","Vyfuerza77",6,Maylo),
+    client8 = new Client("Arturo","Gaona","Elasisitente","Ricci3",7,RinTinTin),
+    client9 = new Client("José","Fehler","D'Elía","Guante1",8,Hachiko),
+    client10 = new Client("Lucio","Bonelli","TortugaMaritima8",9,Bolt),
+    client11 = new Client("Martín","Vanegas","Laguzzi","LocoLope",10,Beethoven),
+    client12 = new Client("Pedro","Velaso","Vaquero","Piquito5",11,Pancho),
+    client13 = new Client("Rubén","Bertora","BalSan","Srconductor1",12,Brian),
+    client14 = new Client("Bernardo","Galvan","CRissi","Margin4l",13,Rex),
+    client15 = new Client("Juan","Dumas","Miserisky","RectoDig5",14,Pluto),
+    client16 = new Client("Melina","Fichelson","Acarddi","Gime49",15,ScoobyDoo),
+    client17 = new Client("Beatriz","Ledesma","Eleonora","W3exler",16,Toto),
+    client18 = new Client("José","Zarazola","BoyOlm","DrO1mi",17,Balto),
+    client19 = new Client("Roberto","Ávalos","Coria","Martin548C",18,Laika),
+    client20 = new Client("Damian","Szifron","Zorro","Simu1ador",19,Smoky),
+]
+
+const arrHiring = [
+    hiring1 = new Hiring(client1,0,"Pending"),    
+    hiring2 = new Hiring(client5,1,"Pending"),
+    hiring3 = new Hiring(client8,2,"Acepted"),
+    hiring4 = new Hiring(client20,3,"Acepted"),
+    hiring5 = new Hiring(client6,4,"Pending"),
+    hiring6 = new Hiring(client15,5,"Pending"),
+    hiring7 = new Hiring(client9,6,"Acepted"),
+    hiring8 = new Hiring(client7,7,"Canceled"),
+    hiring9 = new Hiring(client11,8,"Pending"),
+    hiring10 = new Hiring(client19,9,"Pending"),    
+]
+const arrWalker = [
+    dogWalker1 = new DogWalker("Matthew","Murdock","DareD","NotFear",0,[hiring1,hiring10],"13"),
+    dogWalker2 = new DogWalker("Carl","Lucas","Luke","PowerMan",1,[hiring2,hiring9,hiring7],"19"),
+    dogWalker3 = new DogWalker("Daniel","Rand","IronFi","KunLun",2[hiring3,hiring4,hiring5],"7"),
+    dogWalker4 = new DogWalker("Jessica","Jones","Jewels","Purple",3,[hiring6,hiring8],"12"),
+    dogWalker5 = new DogWalker("Mercedes","Knight","Misty","Detect",4,[],"16"),
+]

@@ -1,0 +1,14 @@
+.card{
+    max-width: 1200px;
+    margin-left: 10%;
+    margin-top: 11%;;
+
+}
+
+.card-body{
+    margin-right: 10%;
+}
+
+thead{
+    background-color:gray;
+}
