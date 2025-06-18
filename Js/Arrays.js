@@ -45,12 +45,12 @@ const arrClient = [
 const arrHiring = [
     hiring1 = new Hiring(client1,0,"Pending"),    
     hiring2 = new Hiring(client5,1,"Pending"),
-    hiring3 = new Hiring(client8,2,"Acepted"),
-    hiring4 = new Hiring(client20,3,"Acepted"),
-    hiring5 = new Hiring(client6,4,"Pending"),
+    hiring3 = new Hiring(client8,2,"Pending"), // perro 4
+    hiring4 = new Hiring(client20,3,"Pending"), // perro 2
+    hiring5 = new Hiring(client6,4,"Pending"), //perro 4
     hiring6 = new Hiring(client15,5,"Pending"),
-    hiring7 = new Hiring(client9,6,"Acepted"),
-    hiring8 = new Hiring(client7,7,"Acepted"),
+    hiring7 = new Hiring(client9,6,"Accepted"),
+    hiring8 = new Hiring(client7,7,"Accepted"),
     hiring9 = new Hiring(client11,8,"Pending"),
     hiring10 = new Hiring(client19,9,"Pending"),    
 ]
