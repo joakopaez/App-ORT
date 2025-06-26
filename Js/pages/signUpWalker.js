@@ -12,8 +12,7 @@ function newWalker() {
     const totalSlot = slot;
 
     if (signInDogWalker(name, lastName, userName, password, slot, totalSlot)) {
-        const signedWalker = new DogWalker(name, lastName, userName, password, [], slot, totalSlot);
-        app.pushWalker(signedWalker);
+        const signedWalker = app.pushWalker(name, lastName, userName, password, slot, totalSlot);
         Swal.fire({
         icon: 'success',
         title: '¡Registro completado!',

@@ -48,14 +48,8 @@ function selectWalker(){
 function sendNewHiring() {
     const id = Number(this.getAttribute("data-id"));
     const currentClient = app.getCurrentUser();
-    const newHiring = new Hiring(currentClient, 'Pending');
-    app.getArrWalker().forEach(walker =>{
-        let walkerId = walker.id;
-        if(walkerId == id){
-            addHiring(newHiring)
-            walker.addHiringToWalker(newHiring)
-        }
-    })
+        app.pushNewHiring(currentClient)
+        app.addHiringToWalker(currentClient, id)
     ;
     Swal.fire({
         icon: 'success',

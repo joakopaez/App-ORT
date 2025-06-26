@@ -7,8 +7,4 @@ class Hiring{
         hiringId++
     }
 
-    
-}
-    function addHiring(newHiring){
-        app.getHiri().push(new Hiring(newHiring.client, newHiring.status))
 }

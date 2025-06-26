@@ -12,6 +12,3 @@ class Client{
 
 }
 
-function addClient(signedClient){
-        app.getArrClient().push(new Client(signedClient.name, signedClient.lastName, signedClient.userName, signedClient.password, signedClient.signedDog))
-    }

@@ -11,15 +11,14 @@ function newClient() {
     const dogSize = parseInt(document.querySelector("#inputDogSize").value);
 
     if (signInClient(name, lastName, userName, password, dogName, dogSize)) {
-        const signedDog = new Dog(dogName, dogSize);
-        const signedClient = new Client(name, lastName, userName, password, signedDog);
-        app.pushClient(signedClient);
+        const signedClient = app.pushClient(name, lastName, userName, password, dogName, dogSize);
         Swal.fire({
             icon: 'success',
             title: '¡Registro completado!',
             text: `Tu registro se realizó con éxito`
         });
     app.changeCurrentUser(signedClient)
+    
     availableWalkers()
     walkerAviable()
     }
